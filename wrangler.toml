@@ -1,0 +1,14 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "test-app"
+main = "src/index.ts"
+compatibility_date = "2026-06-14"
+compatibility_flags = ["nodejs_compat"]
+
+[observability]
+enabled = true
+
+[vars]
+NODE_ENV = "production"
+
+[triggers]
+crons = ["* * * * 1"]
